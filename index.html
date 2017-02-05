@@ -1,8 +1,18 @@
-<div id="map"></div>
-<!-- Replace the value of the key parameter with your own API key. -->
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlbUAcdzVgCD-aZNZS5uQA5CHURXVyi2U&callback=initMap">
-</script>
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script src="map.js"></script>
-<link rel="stylesheet" type="text/css" href="map.css" />
+<html lang="en">
+  <head>
+    <meta charSet="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href={ this.props.favicon } />
+    <title>Map of resources for London rough sleepers</title>
+		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+		<script src="map.js"></script>
+ 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlbUAcdzVgCD-aZNZS5uQA5CHURXVyi2U&callback=initMap"></script>    
+		<link rel="stylesheet" type="text/css" href="map.css" />
+  </head>
+  <body>
+		<div id="map"></div>    
+  </body>
+</html>
+
